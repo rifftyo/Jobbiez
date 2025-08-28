@@ -1,4 +1,4 @@
-package com.example.jobbiez
+package com.rifftyo.jobbiez
 
 import io.flutter.embedding.android.FlutterActivity
 
