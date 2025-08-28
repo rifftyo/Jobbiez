@@ -1,0 +1,34 @@
+name: jobbiez
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  dartz: ^0.10.1
+  dotted_border: ^3.1.0
+  equatable: ^2.0.7
+  file_picker: ^10.3.2
+  flutter:
+    sdk: flutter
+  flutter_rating_bar: ^4.0.1
+  flutter_secure_storage: ^9.2.4
+  get_it: ^8.2.0
+  google_fonts: ^6.3.0
+  http: ^1.5.0
+  image_picker: ^1.2.0
+  intl_phone_field: ^3.2.0
+  provider: ^6.1.5
+  shimmer: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
