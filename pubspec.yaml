@@ -1,7 +1,7 @@
 name: jobbiez
-description: "A new Flutter project."
+description: "Jobbiez is a modern mobile job search application designed to help users discover relevant job opportunities, explore job details, and manage their career journey in one place."
 publish_to: 'none'
-version: 0.1.0
+version: 1.0.0
 
 environment:
   sdk: ^3.7.2

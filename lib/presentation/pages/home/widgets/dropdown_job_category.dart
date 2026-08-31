@@ -14,7 +14,7 @@ class DropdownJobCategory extends StatelessWidget {
       builder: (context, provider, child) {
         return DropdownButtonFormField<String>(
           menuMaxHeight: 200,
-          value: provider.selectedCategory,
+          initialValue: provider.selectedCategory,
           hint: Text(
             'Select Category',
             style: kManropeBodyText.copyWith(color: Colors.grey),

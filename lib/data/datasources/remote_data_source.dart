@@ -48,7 +48,7 @@ abstract class RemoteDataSource {
 
 class RemoteDataSourceImpl implements RemoteDataSource {
   // ignore: constant_identifier_names
-  static const BASE_URL = 'https://jobbiez.up.railway.app/api';
+  static const BASE_URL = 'https://jobbiez-be.vercel.app/api';
   static const tokenKey = 'access_token';
 
   final http.Client client;
