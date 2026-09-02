@@ -8,9 +8,9 @@
   />
 </p>
 
-**Jobbiez** adalah aplikasi mobile pencarian kerja yang dirancang untuk membantu pengguna menemukan lowongan pekerjaan yang relevan, melihat informasi pekerjaan secara detail, serta mengelola perjalanan karier dalam satu aplikasi.
+**Jobbiez** is a mobile job search application designed to help users discover relevant job opportunities, view detailed job information, and manage their career journey in one application.
 
-Aplikasi ini dibangun menggunakan **Flutter** dengan pendekatan **Clean Architecture** untuk menghasilkan struktur kode yang modular, mudah dikembangkan, dan mudah dipelihara.
+The application is built using **Flutter** with a **Clean Architecture** approach to provide a modular, scalable, and maintainable codebase.
 
 > 🎯 **Project Type:** Mobile Application
 > 📱 **Platform:** Android
@@ -24,40 +24,40 @@ Aplikasi ini dibangun menggunakan **Flutter** dengan pendekatan **Clean Architec
 
 ### 🔍 Job Search
 
-* Mencari lowongan pekerjaan.
-* Menampilkan daftar pekerjaan yang tersedia.
-* Menampilkan informasi pekerjaan secara detail.
-* Membantu pengguna menemukan pekerjaan berdasarkan kebutuhan mereka.
+* Search for job opportunities.
+* Display available job listings.
+* View detailed job information.
+* Help users find jobs based on their needs.
 
 ### 📄 Job Details
 
-Pengguna dapat melihat informasi lengkap dari sebuah lowongan pekerjaan, seperti:
+Users can view detailed information about a job opportunity, including:
 
-* Posisi pekerjaan
-* Deskripsi pekerjaan
-* Informasi perusahaan
-* Persyaratan pekerjaan
-* Informasi terkait pekerjaan lainnya
+* Job position
+* Job description
+* Company information
+* Job requirements
+* Other relevant job information
 
 ### 👤 Profile
 
-Pengguna dapat mengelola informasi profil mereka sebagai bagian dari perjalanan karier.
+Users can manage their profile information as part of their career journey.
 
 ### 📎 File & Document
 
-Aplikasi menyediakan kemampuan untuk memilih file dari perangkat yang dapat digunakan dalam proses terkait profil atau pekerjaan.
+The application provides the ability to select files from the device that can be used for profile- or job-related processes.
 
 ### ⭐ Rating
 
-Menggunakan rating component untuk memberikan pengalaman interaksi yang lebih baik pada aplikasi.
+Uses a rating component to provide a better interactive experience within the application.
 
 ### 🔐 Secure Storage
 
-Informasi tertentu yang membutuhkan penyimpanan aman menggunakan secure storage.
+Certain information that requires secure storage is stored using secure storage.
 
 ### 🎨 Modern UI
 
-Menggunakan komponen UI modern dengan dukungan:
+Uses modern UI components with support for:
 
 * Custom widgets
 * Google Fonts
@@ -69,7 +69,7 @@ Menggunakan komponen UI modern dengan dukungan:
 
 ## 🏗️ Architecture
 
-Jobbiez menggunakan pendekatan **Clean Architecture** yang memisahkan aplikasi menjadi beberapa layer.
+Jobbiez uses a **Clean Architecture** approach that separates the application into multiple layers.
 
 ```text
 lib/
@@ -99,7 +99,7 @@ lib/
 
 #### Data Layer
 
-Bertanggung jawab terhadap pengambilan dan pengelolaan data.
+Responsible for retrieving and managing data.
 
 ```text
 Data Sources
@@ -111,7 +111,7 @@ Repository Implementation
 
 #### Domain Layer
 
-Berisi business logic aplikasi dan tidak bergantung pada framework atau implementasi data tertentu.
+Contains the application's business logic and remains independent of specific frameworks or data implementations.
 
 ```text
 Entities / Business Rules
@@ -123,7 +123,7 @@ Entities / Business Rules
 
 #### Presentation Layer
 
-Menangani UI dan state management aplikasi.
+Handles the application's UI and state management.
 
 ```text
 Pages
@@ -133,7 +133,7 @@ Providers
 Widgets
 ```
 
-Struktur ini membuat perubahan pada UI, sumber data, maupun business logic dapat dilakukan secara lebih terisolasi.
+This structure allows changes to the UI, data sources, or business logic to be made in a more isolated and maintainable manner.
 
 ---
 
@@ -157,13 +157,13 @@ Struktur ini membuat perubahan pada UI, sumber data, maupun business logic dapat
 | **Dotted Border**          | Custom UI component                     |
 | **Intl Phone Field**       | Phone number input                      |
 
-Dependency utama tersebut tercantum pada `pubspec.yaml` project.
+These main dependencies are listed in the project's `pubspec.yaml`.
 
 ---
 
 ## 🔄 Application Flow
 
-Secara umum, alur aplikasi mengikuti pola:
+In general, the application follows this pattern:
 
 ```text
 User
@@ -192,7 +192,7 @@ Data Layer
 API / Local Storage
 ```
 
-Hasil data kemudian dikembalikan melalui layer yang sama hingga akhirnya ditampilkan kembali pada UI.
+The resulting data is then returned through the same layers until it is ultimately displayed in the UI.
 
 ---
 
@@ -235,6 +235,6 @@ lib/
 └── main.dart
 ```
 
-Struktur aktual repository memang memisahkan `common`, `data`, `domain`, dan `presentation`, dengan subfolder khusus untuk datasource, models, repositories, use cases, pages, providers, dan widgets.
+The actual repository structure separates `common`, `data`, `domain`, and `presentation`, with dedicated subfolders for data sources, models, repositories, use cases, pages, providers, and widgets.
 
 ---
